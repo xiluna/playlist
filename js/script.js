@@ -1,24 +1,32 @@
-let songName = [];
-let songImage = [];
-let artist = [];
-let songLength = [];
-let songLink = [];
+let names = [];
+let images = [];
+let artists = [];
+let lengths = [];
+let links = [];
 
-$('.button').click(function() {
+$('.buttonAdd').click(function() {
   
-  songName.forEach(function(songN) {
-    $().append(songN);
+  let songName = $(".sngName").val();
+  names.push(songName);
+
+  let songImage = $().val();
+  names.forEach(function(songN) {
+    $('.list').append(songN);
   });
 
   songImage.forEach(function(songImg) {
-    $().append(songImg);
+    $('.list').append(songImg);
   });
 
   artist.forEach(function(songArtist) {
-    $().append(songArtist);
+    $('.list').append(songArtist);
   });
 
   songLength.forEach(function(songTime) {
-    $().append(songTime);
+    $('.list').append(songTime);
+  });
+
+  songLink.forEach(function(songlnk) {
+    $('.list').append(songlnk);
   });
 });
